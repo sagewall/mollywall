@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SLIDES } from './slides';
 
 @Component({
   selector: 'app-root',
@@ -7,9 +8,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'mollywall';
-  public slides = [
-    { src: '/assets/IMG_20200111_122804.jpg' },
-    { src: '/assets/IMG_20200304_203450.jpg' },
-    { src: '/assets/IMG_20200420_124604.jpg' },
-  ];
+  public slides = SLIDES;
 }
