@@ -1,6 +1,8 @@
-.container {
-  display: block;
-  height: 500px;
-  width: 500px;
-  padding: 2em;
+.description,
+.title {
+  text-align: center;
+  background: lightgray;
+  border-radius: 0.5em;
+  padding: 1em;
+  margin: 0em;
 }

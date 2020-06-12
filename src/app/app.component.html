@@ -1,7 +1,11 @@
-<div fxLayout="column" fxLayoutAlign="space-around center" fxFill>
-  <div fxFlex>Header</div>
-  <div fxFlex="80" fxFill>
-    <app-carousel [slides]="slides"></app-carousel>
+<div fxLayout="column" fxLayoutAlign="center center" fxFill>
+  <h1 fxFlex fxFill class="title">In Loving Memory of Molly Wall</h1>
+  <div fxFlex="85" fxFill>
+    <app-carousel #carousel [slides]="slides"></app-carousel>
   </div>
-  <div fxFlex>Footer</div>
+  <div fxFlex fxFill class="description">
+    <h3>{{ carousel.slides[carousel.currentSlide].headline }}</h3>
+    <p>{{ carousel.slides[carousel.currentSlide].date }}</p>
+    <p>{{ carousel.slides[carousel.currentSlide].description }}</p>
+  </div>
 </div>
