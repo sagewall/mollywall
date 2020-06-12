@@ -78,3 +78,26 @@
     transform: rotate(225deg);
   }
 }
+
+/* style the position indicator */
+.position-container {
+  position: absolute;
+  background-color: transparent;
+  padding: 0.5em;
+  font-weight: bold;
+  user-select: none;
+  bottom: 0;
+  width: 100%;
+}
+
+.position {
+  background: white;
+  height: 0.5em;
+  width: 0.5em;
+  opacity: 50%;
+  border-radius: 1em;
+}
+
+.selected {
+  opacity: 100%;
+}
