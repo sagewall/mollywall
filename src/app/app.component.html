@@ -1,3 +1,7 @@
-<div class="container">
-  <app-carousel [slides]="slides"></app-carousel>
+<div fxLayout="column" fxLayoutAlign="space-around center" fxFill>
+  <div fxFlex>Header</div>
+  <div fxFlex="80" fxFill>
+    <app-carousel [slides]="slides"></app-carousel>
+  </div>
+  <div fxFlex>Footer</div>
 </div>
