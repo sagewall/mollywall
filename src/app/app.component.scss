@@ -1,8 +1,28 @@
-.description,
-.title {
-  text-align: center;
+.gray-background {
   background: lightgray;
-  border-radius: 0.5em;
+}
+
+.padded {
   padding: 1em;
   margin: 0em;
+}
+
+.date,
+.headline,
+.title,
+.description {
+  text-align: center;
+}
+
+.date,
+.title {
+  font-family: "Dancing Script", cursive;
+}
+
+.headline {
+  font-family: "Playfair Display", serif;
+}
+
+.description {
+  font-family: "Roboto", sans-serif;
 }
