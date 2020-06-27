@@ -25,18 +25,18 @@ export class CarouselComponent implements OnInit {
     this.preloadImages();
   }
 
-  preloadImages() {
+  preloadImages(): void {
     for (const slide of this.slides) {
       new Image().src = slide.src;
     }
   }
 
-  onPreviousClick() {
+  onPreviousClick(): void {
     const previous = this.currentSlide - 1;
     this.currentSlide = previous < 0 ? this.slides.length - 1 : previous;
   }
 
-  onNextClick() {
+  onNextClick(): void {
     const next = this.currentSlide + 1;
     this.currentSlide = next === this.slides.length ? 0 : next;
   }
