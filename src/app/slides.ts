@@ -2,14 +2,13 @@ export const SLIDES = [
   {
     date: 'January 4, 2008',
     description:
-      'This is the day I first saw Molly and instantly fell in love with her.  She was the only brindle female in the litter and was so cute.',
+      'This is the day I first saw Molly and instantly fell in love with her.  She was the only brindle female puppy in the litter and was so cute.',
     headline: 'Introductions',
     src: '/assets/20080104.jpg',
   },
   {
     date: 'January 17, 2008',
-    description:
-      'The first few nights I slept on the floor next to her crate so she would not be so scared.',
+    description: `The first few nights I slept on the floor next to her crate so she wouldn't be so scared.`,
     headline: 'First day home',
     src: '/assets/20080117.jpg',
   },
@@ -22,20 +21,19 @@ export const SLIDES = [
   },
   {
     date: 'April 4, 2008',
-    description:
-      'Molly quickly outgrew her first bed but that did not stop her from still trying to fit.',
+    description: `Molly quickly outgrew her first bed but that didn't stop her from still trying to fit.`,
     headline: 'They grow up so fast',
     src: '/assets/20080404.jpg',
   },
   {
     date: 'May 5, 2008',
-    description: 'She always loved to use the stuffed animals as pillows.',
+    description: 'She loved to use her stuffed animals as pillows.',
     headline: 'Resting in the sun with my lion',
     src: '/assets/20080502.jpg',
   },
   {
     date: 'June 5, 2008',
-    description: 'Taking a nap on her bed in Montrose.',
+    description: 'Taking a nap on her bed.',
     headline: 'Nap time',
     src: '/assets/20080605.jpg',
   },
@@ -55,7 +53,7 @@ export const SLIDES = [
   {
     date: 'October 31, 2009',
     description:
-      'Molly loved Halloween and to great all the little kids arriving at the door.',
+      'Molly loved Halloween and to greet all the little kids arriving at the door. She loved little kids.',
     headline: 'Pumpkin',
     src: '/assets/20091031.jpg',
   },
@@ -100,7 +98,7 @@ export const SLIDES = [
   {
     date: 'October 29, 2016',
     description:
-      'Molly was diagnosed with Hemangiosarcoma on July 4, 2016. After a few months of chemotherapy she lost some hair in the muzzle but lived for another four years.',
+      'Molly was diagnosed with cancer on July 4, 2016. After a few months of chemotherapy she lost some hair in the muzzle but lived for another four years.',
     headline: 'Chemotherapy hair loss',
     src: '/assets/20161029.jpg',
   },
