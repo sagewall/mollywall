@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Slide } from './slide';
 import { SLIDES } from './slides';
 
 @Component({
@@ -7,6 +8,5 @@ import { SLIDES } from './slides';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'mollywall';
-  public slides = SLIDES;
+  public slides: Slide[] = SLIDES;
 }

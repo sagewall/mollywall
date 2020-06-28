@@ -1,5 +1,6 @@
 import { animate, style, transition, trigger } from '@angular/animations';
 import { Component, Input, OnInit } from '@angular/core';
+import { Slide } from '../slide';
 
 @Component({
   selector: 'app-carousel',
@@ -16,7 +17,7 @@ import { Component, Input, OnInit } from '@angular/core';
   ],
 })
 export class CarouselComponent implements OnInit {
-  @Input() slides;
+  @Input() slides: Slide[];
   currentSlide = 0;
 
   constructor() {}

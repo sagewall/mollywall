@@ -1,4 +1,6 @@
-export const SLIDES = [
+import { Slide } from './slide';
+
+export const SLIDES: Slide[] = [
   {
     date: 'January 4, 2008',
     description:
