@@ -4,6 +4,7 @@
     <img
       *ngIf="i === currentSlide"
       [src]="slide.src"
+      [alt]="slide.description"
       class="slide"
       @carouselAnimation
     />
