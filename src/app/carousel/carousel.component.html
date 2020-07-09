@@ -11,10 +11,18 @@
   </ng-container>
 
   <!-- controls -->
-  <button class="control prev" (click)="onPreviousClick()">
+  <button
+    aria-label="Previous Photograph"
+    class="control prev"
+    (click)="onPreviousClick()"
+  >
     <span class="arrow left"></span>
   </button>
-  <button class="control next" (click)="onNextClick()">
+  <button
+    aria-label="Next Photograph"
+    class="control next"
+    (click)="onNextClick()"
+  >
     <span class="arrow right"></span>
   </button>
 
