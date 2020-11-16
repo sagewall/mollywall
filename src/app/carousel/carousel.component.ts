@@ -17,7 +17,8 @@ import { Slide } from '../slide';
   ],
 })
 export class CarouselComponent implements OnInit {
-  @Input() slides: Slide[];
+  @Input()
+  slides: Slide[] = [];
   currentSlide = 0;
 
   constructor() {}
