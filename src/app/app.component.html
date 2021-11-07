@@ -1,11 +1,9 @@
-<div fxLayout="column" fxLayoutAlign="center center" fxFill>
-  <h1 fxFlex fxFill class="title gray-background padded">
-    In Loving Memory of Molly Wall
-  </h1>
-  <div fxFlex="85" fxFill>
+<div class="app-container">
+  <h1 class="title gray-background padded">In Loving Memory of Molly Wall</h1>
+  <div class="carousel-container">
     <app-carousel #carousel [slides]="slides"></app-carousel>
   </div>
-  <div fxFlex fxFill class="gray-background padded">
+  <div class="description-container gray-background padded">
     <h2 class="headline">
       {{ carousel.slides[carousel.currentSlide].headline }}
     </h2>

@@ -27,11 +27,7 @@
   </button>
 
   <!-- position indicator -->
-  <div
-    fxLayout="row"
-    fxLayoutAlign="space-around center"
-    class="position-container"
-  >
+  <div class="position-container">
     <div *ngFor="let slide of slides; let i = index">
       <div class="position" [ngClass]="{ selected: i === currentSlide }"></div>
     </div>
