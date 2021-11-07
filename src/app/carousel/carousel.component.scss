@@ -78,7 +78,19 @@
 }
 
 /* style the position indicator */
+
+.position {
+  background: gray;
+  height: 0.5em;
+  width: 0.5em;
+  border-radius: 1em;
+}
+
 .position-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
   position: absolute;
   padding: 0.5em;
   font-weight: bold;
@@ -87,12 +99,6 @@
   width: 100%;
 }
 
-.position {
-  background: gray;
-  height: 0.5em;
-  width: 0.5em;
-  border-radius: 1em;
-}
 .selected {
   background: white;
 }
