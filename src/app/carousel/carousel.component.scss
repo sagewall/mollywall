@@ -79,6 +79,9 @@
 
 /* style the position indicator */
 .position-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   position: absolute;
   padding: 0.5em;
   font-weight: bold;
