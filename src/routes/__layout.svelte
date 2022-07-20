@@ -14,7 +14,7 @@
     padding: 0;
   }
 
-  :global(.app-container) {
+  :global(#app) {
     height: 100%;
     width: 100%;
     display: flex;
