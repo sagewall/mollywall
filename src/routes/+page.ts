@@ -25,9 +25,8 @@ import img20200420 from "$lib/assets/20200420.jpg";
 import img20200526 from "$lib/assets/20200526.jpg";
 import img20200605 from "$lib/assets/20200605.jpg";
 import img20200615 from "$lib/assets/20200615.jpg";
-import type { Slide } from "./slide";
 
-export const SLIDES: Slide[] = [
+const SLIDES: Slide[] = [
   {
     date: "January 4, 2008",
     description:
@@ -229,3 +228,7 @@ export const SLIDES: Slide[] = [
     src: img20200615
   }
 ];
+
+export const load = () => {
+  return { slides: SLIDES };
+};

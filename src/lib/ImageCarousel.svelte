@@ -1,7 +1,4 @@
 <script lang="ts">
-  import { lazyLoad } from "./lazyLoad.js";
-  import type { Slide } from "./slide";
-
   export let slides: Slide[];
   export let currentSlide = 0;
 
@@ -18,7 +15,7 @@
 
 <div class="carousel">
   {#each [slides[currentSlide]] as item (currentSlide)}
-    <img use:lazyLoad={item.src} alt={item.description} class="slide" />
+    <img src={item.src} alt={item.description} class="slide" />
   {/each}
 
   <button aria-label="Previous Photograph" class="control prev" on:click={() => onPreviousClick()}>
