@@ -1,8 +1,10 @@
 <script lang="ts">
   import ImageCarousel from "$lib/ImageCarousel.svelte";
-  import { SLIDES } from "$lib/slides";
+  // import { SLIDES } from "$lib/slides";
 
-  const slides = SLIDES;
+  export let data;
+
+  const slides = data.slides;
   let currentSlide = 0;
 </script>
 
