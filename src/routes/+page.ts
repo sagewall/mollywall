@@ -25,6 +25,7 @@ import img20200420 from "$lib/assets/20200420.jpg";
 import img20200526 from "$lib/assets/20200526.jpg";
 import img20200605 from "$lib/assets/20200605.jpg";
 import img20200615 from "$lib/assets/20200615.jpg";
+import type { Slide } from "$lib/types/slide.type";
 
 const SLIDES: Slide[] = [
   {

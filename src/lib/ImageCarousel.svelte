@@ -1,11 +1,5 @@
 <script lang="ts">
-  interface Slide {
-    date: string;
-    description: string;
-    headline: string;
-    id: string;
-    src: string;
-  }
+  import type { Slide } from "$lib/types/slide.type";
 
   export let slides: Slide[];
   export let currentSlide = 0;
