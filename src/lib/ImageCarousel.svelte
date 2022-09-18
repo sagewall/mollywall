@@ -1,4 +1,12 @@
 <script lang="ts">
+  interface Slide {
+    date: string;
+    description: string;
+    headline: string;
+    id: string;
+    src: string;
+  }
+
   export let slides: Slide[];
   export let currentSlide = 0;
 

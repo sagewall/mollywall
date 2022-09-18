@@ -6,11 +6,3 @@ declare namespace App {
   // interface PageData {}
   // interface Platform {}
 }
-
-interface Slide {
-  date: string;
-  description: string;
-  headline: string;
-  id: string;
-  src: string;
-}
