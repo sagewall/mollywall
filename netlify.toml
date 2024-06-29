@@ -5,7 +5,6 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    Server = "Atari 2600"
     Strict-Transport-Security = "max-age=31536000; includeSubDomains"
     X-Frame-Options = "SAMEORIGIN"
     X-Content-Type-Options = "nosniff"
