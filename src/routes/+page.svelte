@@ -1,11 +1,11 @@
 <script lang="ts">
 	import ImageCarousel from '$lib/ImageCarousel.svelte';
-	// import { SLIDES } from "$lib/slides";
 
-	export let data;
+	let { data } = $props();
+
+	let currentSlide = $state(0);
 
 	const slides = data.slides;
-	let currentSlide = 0;
 </script>
 
 <div class="carousel-container">

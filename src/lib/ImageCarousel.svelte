@@ -1,8 +1,12 @@
 <script lang="ts">
-	import type { Slide } from './types/slide.type';
+	import type { Slide } from '$lib/types/slide.type';
 
-	export let slides: Slide[] = [];
-	export let currentSlide = 0;
+	interface Props {
+		slides: Slide[];
+		currentSlide: number;
+	}
+
+	let { slides = [], currentSlide = $bindable(0) }: Props = $props();
 
 	const onPreviousClick = () => {
 		const previous = currentSlide - 1;
@@ -20,16 +24,16 @@
 		<img src={item.src} alt={item.description} class="slide" />
 	{/each}
 
-	<button aria-label="Previous Photograph" class="control prev" on:click={() => onPreviousClick()}>
-		<span class="arrow left" />
+	<button aria-label="Previous Photograph" class="control prev" onclick={() => onPreviousClick()}>
+		<span class="arrow left"></span>
 	</button>
-	<button aria-label="Next Photograph" class="control next" on:click={() => onNextClick()}>
-		<span class="arrow right" />
+	<button aria-label="Next Photograph" class="control next" onclick={() => onNextClick()}>
+		<span class="arrow right"></span>
 	</button>
 
 	<div class="position-container">
 		{#each slides as slide, i (slide.id)}
-			<div class="position" class:selected={i === currentSlide} />
+			<div class="position" class:selected={i === currentSlide}></div>
 		{/each}
 	</div>
 </div>

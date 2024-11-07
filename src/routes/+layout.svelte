@@ -1,8 +1,10 @@
-<!-- <div class="app-container"> -->
-<h1 class="title gray-background padded">In Loving Memory of Molly Wall</h1>
-<slot />
+<script>
+	let { children } = $props();
+</script>
 
-<!-- </div> -->
+<h1 class="title gray-background padded">In Loving Memory of Molly Wall</h1>
+{@render children?.()}
+
 <style>
 	@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
