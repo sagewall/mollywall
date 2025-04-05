@@ -20,7 +20,7 @@
 </script>
 
 <div class="carousel">
-	{#each [slides[currentSlide]] as item (currentSlide)}
+	{#each [slides[currentSlide]] as item (item.id)}
 		<img src={item.src} alt={item.description} class="slide" />
 	{/each}
 
