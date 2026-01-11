@@ -4,20 +4,18 @@
 	let { data } = $props();
 
 	let currentSlide = $state(0);
-
-	const slides = data.slides;
 </script>
 
 <div class="carousel-container">
-	<ImageCarousel {slides} bind:currentSlide />
+	<ImageCarousel slides={data.slides} bind:currentSlide />
 </div>
 <div class="description-container gray-background padded">
 	<h2 class="headline">
-		{slides[currentSlide].headline}
+		{data.slides[currentSlide].headline}
 	</h2>
-	<div class="date">{slides[currentSlide].date}</div>
+	<div class="date">{data.slides[currentSlide].date}</div>
 	<p class="description">
-		{slides[currentSlide].description}
+		{data.slides[currentSlide].description}
 	</p>
 </div>
 
